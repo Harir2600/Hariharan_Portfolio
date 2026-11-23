@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hariharan R, C++ software engineer specializing in medical imaging and clinical desktop software.">
+  <title>Hariharan R | C++ Software Engineer</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101713;
+      --surface: #17231b;
+      --line: #34463a;
+      --text: #edf2e9;
+      --muted: #b7c6ba;
+      --accent: #b6e5a3;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 1rem/1.65 system-ui, sans-serif;
+    }
+    main, header, footer { width: min(68rem, calc(100% - 2.5rem)); margin: auto; }
+    header, footer, nav, .actions { display: flex; flex-wrap: wrap; gap: 1rem; }
+    header, footer { justify-content: space-between; padding: 1.25rem 0; }
+    a { color: var(--accent); text-underline-offset: .25em; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+    section { padding: clamp(2rem, 6vw, 5rem) 0; border-top: 1px solid var(--line); }
+    h1, h2, h3, p { margin: 0 0 .8rem; }
+    h1, h2, h3 { line-height: 1.12; }
+    h1 { font-size: clamp(2.8rem, 8vw, 6rem); letter-spacing: -.07em; max-width: 14ch; }
+    h1 em { color: var(--accent); font-family: Georgia, serif; font-weight: 400; }
+    h2 { font-size: clamp(2rem, 5vw, 3.25rem); letter-spacing: -.05em; }
+    p, li, dd { color: var(--muted); }
+    .eyebrow { color: var(--accent); font: 500 .9rem/1.5 monospace; text-transform: uppercase; letter-spacing: .08em; }
+    .intro { max-width: 52ch; font-size: 1.15rem; }
+    .actions { margin-top: 1.5rem; }
+    .button { padding: .65rem 1rem; border: 1px solid var(--accent); border-radius: .4rem; text-decoration: none; }
+    .primary { background: var(--accent); color: var(--bg); font-weight: 700; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 23rem), 1fr)); gap: 1rem; }
+    article { padding: 1.25rem; border: 1px solid var(--line); border-radius: .65rem; background: var(--surface); }
+    article ul { padding-left: 1.2rem; }
+    .history { display: grid; gap: 1rem; }
+    dt { font-weight: 700; }
+    dd { margin: 0 0 1rem; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body id="top">
+  <header>
+    <strong>Hariharan R</strong>
+    <nav aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section aria-labelledby="intro">
+      <p class="eyebrow">C++ Software Engineer</p>
+      <h1 id="intro">Building software for <em>medical imaging.</em></h1>
+      <p class="intro">I’m Hariharan R. I build C++ and MFC desktop applications for viewing medical images and supporting clinical workflows, with a focus on rendering performance and responsive interfaces.</p>
+      <div class="actions">
+        <a class="button primary" href="#work">Explore my work</a>
+        <a class="button" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2>Selected work</h2>
+      <div class="projects">
+        <article>
+          <p class="eyebrow">Trenser Technology Solutions</p>
+          <h3>PACS Viewer System</h3>
+          <p>A desktop viewer for DICOM imaging studies used in hospital PACS workflows.</p>
+          <ul>
+            <li>Implemented interactive measurements, spine labeling, and annotations in C++ and MFC.</li>
+            <li>Optimized image rendering and memory handling to improve responsiveness and stability.</li>
+            <li>Integrated and validated DICOM support for hospital imaging systems.</li>
+          </ul>
+        </article>
+        <article>
+          <p class="eyebrow">Quest Global</p>
+          <h3>Ultrasound Scanner Software</h3>
+          <p>Clinical interfaces for stress echocardiography and pre-scan configuration.</p>
+          <ul>
+            <li>Built StressEcho interfaces for real-time interaction during cardiac assessments.</li>
+            <li>Developed configurable scan presets for different modalities and organ-specific exams.</li>
+            <li>Carried features from requirements and UI design through implementation, validation, and documentation.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="history">
+        <article>
+          <p class="eyebrow">Feb 2025 – Present</p>
+          <h3>Trenser Technology Solutions</h3>
+          <p>Software Engineer · Trivandrum, Kerala</p>
+          <p>I develop a DICOM-based PACS viewer and collaborate with QA, product, and domain experts on production releases.</p>
+        </article>
+        <article>
+          <p class="eyebrow">Sep 2022 – Jan 2025</p>
+          <h3>Quest Global</h3>
+          <p>Software Engineer · Trivandrum, Kerala</p>
+          <p>I developed and maintained C++ and MFC medical device applications, resolved defects, and documented clinical workflows.</p>
+        </article>
+        <article>
+          <p class="eyebrow">Aug 2018 – May 2022</p>
+          <h3>Kamaraj College of Engineering and Technology</h3>
+          <p>B.E. Electronics and Communication Engineering · Virudhunagar, Tamil Nadu</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Technical skills</h2>
+      <dl>
+        <dt>Development</dt>
+        <dd>C++, MFC, multithreading, object-oriented design, design patterns</dd>
+        <dt>Medical imaging</dt>
+        <dd>DICOM, PACS, image rendering, interactive visualization</dd>
+        <dt>Engineering practices</dt>
+        <dd>Debugging, performance optimization, unit testing, code review, technical documentation</dd>
+        <dt>Tools</dt>
+        <dd>Visual Studio, Git, SVN, ClearCase, Jira</dd>
+        <dt>AI fundamentals</dt>
+        <dd>Generative AI, large language models, prompt engineering</dd>
+      </dl>
+    </section>
+
+    <section id="contact">
+      <h2>Let’s talk.</h2>
+      <p>Madurai, Tamil Nadu, India</p>
+      <div class="actions">
+        <a class="button primary" href="mailto:rajhari6620@gmail.com">Email me</a>
+        <a class="button" href="https://www.linkedin.com/in/hariharan-ravichandran-527837184">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+  <footer><span>Hariharan R</span><a href="#top">Back to top</a></footer>
+</body>
+</html>
